@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Local Company For You</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+<style>
+    body {
+        background-image: url('../images/background-azulejo.jpg');
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="m-4">
+            <nav class="nav nav-pills nav-justified d-flex justify-content-center">
+                <div class="row align-items-center">
+                    <div class="col-2">
+                        <a href="../homepage.html"><img class="rounded img-fluid w-75 align-middle"
+                                src="../images/local_logo.jpg" alt="Logo Local Company For You" /></a>
+                    </div>
+                    <div class="col-2 text-center">
+                        <div class="nav-item dropdown">
+                            <a href="#"
+                                class="nav-link dropdown-toggle bg-white border border-2 border-danger text-danger fw-bold"
+                                data-bs-toggle="dropdown">Our secret</a>
+                            <div class="dropdown-menu">
+                                <a href="../secret/secret.html" class="dropdown-item text-danger">How we started?</a>
+                                <a href="../secret/team.html" class="dropdown-item text-danger">Meet our team</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 text-center">
+                        <a href="../vision/vision.html"
+                            class="nav-link dropdown-toggle bg-white border border-2 border-danger text-danger fw-bold">Our
+                            vision</a>
+                    </div>
+                    <div class="col-2 text-start">
+                        <div class="nav-item dropdown">
+                            <a href="#"
+                                class="nav-link dropdown-toggle bg-white border border-2 border-danger text-danger fw-bold px-1"
+                                data-bs-toggle="dropdown">Our local activities</a>
+                            <div class="dropdown-menu">
+                                <a href="../activities/fado.html" class="dropdown-item text-danger">Fado night</a>
+                                <a href="../activities/gastronomy.html" class="dropdown-item text-danger">Gastronomy
+                                    night</a>
+                                <a href="../activities/beach.html" class="dropdown-item text-danger">Beaches</a>
+                                <a href="../activities/bars.html" class="dropdown-item text-danger">Best local bars</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 text-center">
+                        <div class="nav-item dropdown">
+                            <a href="#"
+                                class="nav-link dropdown-toggle bg-white border border-2 border-danger text-danger fw-bold"
+                                data-bs-toggle="dropdown">Our reliability</a>
+                            <div class="dropdown-menu">
+                                <a href="../reliability/comments.html" class="dropdown-item text-danger">Our rating and
+                                    comments</a>
+                                <a href="../reliability/partners.html" class="dropdown-item text-danger">Our
+                                    partners</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 text-center">
+                        <div class="nav-item dropdown">
+                            <a href="#"
+                                class="nav-link dropdown-toggle bg-white border border-2 border-danger text-danger fw-bold"
+                                data-bs-toggle="dropdown">Book now</a>
+                            <div class="dropdown-menu">
+                                <a href="../booking/contact.html" class="dropdown-item text-danger">Contact us</a>
+                                <a href="../booking/find.html" class="dropdown-item text-danger">Find us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="m-4 d-flex justify-content-center border-danger">
+                <div class="col-md-6 bg-white border border-2 border-danger text-danger p-4">
+                    <form action="https://hnitest.go.yj.fr" method="post">
+                        <legend>
+                            <h1>
+                                <i> Contact us: </i>
+                            </h1>
+                        </legend>
+                        <div class="mb-3">
+                            <label for="firstname" class="form-label">First name:</label>
+                            <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="lastname" class="form-label">Last name:</label>
+                            <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Your email:</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="activity" class="form-label">Choose the activity:</label>
+                            <select class="form-select" id="activity" name="activity">
+                                <option value="Portugal">Fado night</option>
+                                <option value="Germany">Gastronomy</option>
+                                <option value="France">Beaches</option>
+                                <option value="Spain">Bars</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="request" class="form-label">Your request:</label>
+                            <textarea class="form-control" id="request" name="request" rows="5" placeholder="Tell us when, which activity and how many people."></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="country" class="form-label">Nationality:</label>
+                            <select class="form-select" id="country" name="country">
+                                <option value="Portugal">Portugal</option>
+                                <option value="Germany">Germany</option>
+                                <option value="France">France</option>
+                                <option value="Spain">Spain</option>
+                                <option value="Italy">Italy</option>
+                                <option value="England">England</option>
+                                <option value="Denmark">Denmark</option>
+                                <option value="Netherlands">Netherlands</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-danger">Confirm</button>
+                    </form>
+                    
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">Local Company For You@ copyright 2018<br></footer>
+</body>
+
+</html>
